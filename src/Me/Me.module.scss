@@ -1,0 +1,17 @@
+.me {
+  position: absolute;
+  top: 110px;
+  right: 50px;
+  width: 400px;
+  border-radius: 20%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgb(216, 216, 233);
+  filter: brightness(90%) contrast(110%);
+}
+
+
+@media (max-width: 768px) {
+  .me {
+    position: unset;
+  }
+}
