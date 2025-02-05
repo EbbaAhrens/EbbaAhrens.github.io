@@ -74,12 +74,14 @@ ul li {
 
   .aboutMe {
     margin-right: 0;
-    max-width: 100%;
+    max-width: 300px
   }
 
   .sections {
-    width: 100%;
     padding: 0 10px;
+    div{
+      width: 300px;
+    }
   }
 
   h1 {
@@ -87,7 +89,7 @@ ul li {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   ul li {

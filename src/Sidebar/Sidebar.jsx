@@ -3,24 +3,25 @@ import styles from "./Sidebar.module.scss";
 
 export const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
+  let timeoutId;
 
   useEffect(() => {
     const handleScroll = () => {
-      const experienceSection = document.getElementById("experience");
-      if (experienceSection) {
-        const rect = experienceSection.getBoundingClientRect();
-        setShowSidebar(rect.top <= window.innerHeight / 2);
-      }
+      setShowSidebar(true);
+      clearTimeout(timeoutId);
+      timeoutId = setTimeout(() => setShowSidebar(false), 2000);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(timeoutId);
+    };
   }, []);
 
   const handleScrollToSection = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" });
   };
-
 
   return (
     <nav className={`${styles.sidebar} ${showSidebar ? styles.visible : ""}`}>
@@ -32,7 +33,7 @@ export const Sidebar = () => {
           Erfarenheter från utbildning
         </li>
         <li onClick={() => handleScrollToSection("contact")}>Kontakt</li>
-        <li onClick={() => setShowSidebar((prev) => !prev)}>Göm</li>
+        <li onClick={(prev) => setShowSidebar(!prev)}>Göm</li>
       </ul>
     </nav>
   );
