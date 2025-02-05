@@ -13,7 +13,7 @@ export const Education = () => {
         <ul>
           <li>Inriktning på livsmedel </li>
           <li>
-            Kurser inom livsmedelskemi och nutrition, livsmedelsmikrobiologi, livsmedelsteknik, livsmedelsformulering, kvalite- och produktsäkerhet och probiotika
+            Kurser inom livsmedelskemi och nutrition, livsmedelsmikrobiologi, livsmedelsteknik, livsmedelsformulering, kvalité- och produktsäkerhet och probiotika
           </li>
           <li>
             Pågående projekt inom formulering av sockerfritt, gelatinfritt godis och kvalitetssäkring för surdegsbröd.

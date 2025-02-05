@@ -4,6 +4,7 @@ import styles from "./Contact.module.scss";
 
 export const Contact = () => {
   const email = "ahrensebba@gmail.com"
+  const number = "0760257028"
   return (
     <div id="contact" className={styles.contact}>
       <h1>Kontakt</h1>
@@ -12,6 +13,10 @@ export const Contact = () => {
         <li>
           {email}
           <CopyToClipboardButton value={email} />
+        </li>
+        <li>
+          {number}
+          <CopyToClipboardButton value={number} />
         </li>
         <li>
           <a

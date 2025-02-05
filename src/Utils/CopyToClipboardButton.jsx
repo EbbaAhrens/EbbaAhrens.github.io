@@ -19,7 +19,7 @@ export const CopyToClipboardButton = ({ value }) => {
 
       <span>
         <Snackbar
-          message="Copied to clipboard"
+          message="Kopierat till urklipp!"
           anchorOrigin={{ vertical: "top", horizontal: "center" }}
           autoHideDuration={2000}
           onClose={() => setOpen(false)}
