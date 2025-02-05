@@ -23,9 +23,11 @@ export const Experience = () => {
         <h2>
           <strong>Rörvikshus</strong>
         </h2>
-        <h3>Som marknadsassistentpraktikant lärde jag mig:</h3>
+        <h3>Som marknadsassistent lärde jag mig:</h3>
         <ul>
-          <li> Kundbemötande, säljteknik och hur man kommunicerar tydligt</li>
+          <li>Bra Kundbemötande</li>
+          <li>Säljtekniker</li>
+          <li>Vikten av tydlig kommunikation</li>
         </ul>
       </div>
     </div>
